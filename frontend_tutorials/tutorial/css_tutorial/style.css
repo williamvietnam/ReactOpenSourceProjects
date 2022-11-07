@@ -1,0 +1,12 @@
+/* #first-heading {
+    color: aquamarine;
+    font-size: 20px;
+} */
+
+:root{
+    --text-color:green;
+}
+
+h1{
+    color: var(--text-color);
+}
