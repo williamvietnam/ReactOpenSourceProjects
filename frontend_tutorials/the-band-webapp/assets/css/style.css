@@ -112,23 +112,46 @@ html {
     text-align: center;
 }
 
-#slider>h3{
+#slider>h2{
+    width: 100%;
     position: absolute;
-    bottom: 0;
-    display: block;
+    bottom: 64px;
     color: #fff;
+    text-align: center;
 }
 
-#slider>h6 {
+#slider>h4 {
+    width: 100%;
     color: #fff;
     position: absolute;
-    display: block;
-    bottom: 0;
+    bottom: 42px;
+    text-align: center;
 }
 
 #content {
     height: 1000px;
-    background-color: #ccc;
+}
+
+#content .content-section{
+    width: 100%;
+    text-align: center;
+}
+
+#content .content-section > h1{
+    margin-top: 24px;
+}
+
+#content .content-section > h6{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 16px;
+}
+
+#content .content-section > p{
+    margin-top: 16px;
+    width: 50%;
+    align-items: center;
+    text-align: justify;
+    transform: translateX(50%);
 }
 
 #footer {}
