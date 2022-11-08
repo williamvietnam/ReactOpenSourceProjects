@@ -31,9 +31,17 @@ h1 {
     background: rgb(190, 124, 157);
 }
 
+/** CSS position */
+/*
+- position: relative --> căn đối tượng so vs vị trí gốc của đối tượng ấy
+- position: absolute --> căn đối tượng so vs đối tượng cha bọc nó (nếu ko có đối tượng cha bọc thì sẽ coi màn hình hoặc thẻ body là đối tượng cha để căn)
+- position: fixed --> căn đối tượng so vs màn hình; ứng dụng: giống như toolbar trong mobileApp khi user kéo xuống thì thanh toolbar vẫn dc giữ cố định ở trên
+- position: sticky --> 
+*/
 .box1 {
     background-color: darkturquoise;
-   
+    position: relative;
+    top: 15px;   
 }
 
 .box2 {
@@ -46,4 +54,23 @@ h1 {
     border-width: 10px;
     border-style: solid;
     border-color: aqua;
+}
+
+/*background css */
+.background_demo{
+    width: 50%;
+    height: 20vh;
+    background-image: url(https://w7.pngwing.com/pngs/174/600/png-transparent-cat-animal-lovely-cat.png);
+    background-repeat: no-repeat; /*gần tương tự như scaleType trong android*/
+    background-size: 250px; /*kích thước của background*/
+    background-position: top right; /*vị trí của background so vs kích thước của class background_demo*/
+}
+
+/*Căn giữa thành phần trong CSS*/
+.align_demo{
+    background-color: orange;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
