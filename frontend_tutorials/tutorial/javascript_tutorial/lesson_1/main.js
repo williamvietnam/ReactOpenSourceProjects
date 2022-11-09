@@ -45,4 +45,5 @@ console.log('Size of arrays after push: ' + languages.push('CSS', 'Dart', 'Java'
 
 // demo Date object:
 var date = new Date();
-console.log(date.getFullYear());
+var year = date.getFullYear();
+console.log(year);
