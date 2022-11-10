@@ -177,13 +177,13 @@ function calculateRating(_arrays) {
 
 //Way 2: use filter() vs reduce()
 function calculateRating2(_arrays) {
-    let _arraysTemp = _arrays.filter(function(currentValue, currentIndex, arr){
+    let _arraysTemp = _arrays.filter(function (currentValue, currentIndex, arr) {
         return currentValue.Director === 'Christopher Nolan'
     });
-    let totalImdbRating= _arraysTemp.reduce(function(total, currentValue, currentIndex, arr){
+    let totalImdbRating = _arraysTemp.reduce(function (total, currentValue, currentIndex, arr) {
         return total + Number(currentValue.imdbRating);
     }, 0)
-    return totalImdbRating/(_arraysTemp.length)
+    return totalImdbRating / (_arraysTemp.length)
 }
 
 // Expected results
@@ -197,3 +197,46 @@ Array.prototype.reduce2 = function (callback, result) {
         callback(result, this[i], i, this)
     }
 }
+
+//-----------------------------------------------------------------------------------
+
+function arrToObj(_arrays) {
+    var result = _arrays.reduce(function (total, currentValue, currentIndex, arr) {
+        currentIndex = currentValue[0];
+        total[currentIndex] = currentValue[1];
+        return total;
+    }, new Object())
+    return result;
+}
+
+function arrToObj2(_arrays) {
+    var _obj = new Object();
+    for (let i = 0; i < _arrays.length; i++) {
+        var currentIndex = _arrays[i][0]
+        _obj[currentIndex] = _arrays[i][1]
+    }
+    return _obj;
+}
+
+// Expected results:
+var arr = [
+    ['name', 'William Nguyen'],
+    ['age', 25],
+    ['address', 'Hanoi'],
+    ['Job', "Developer"],
+];
+console.log(arrToObj2(arr)); // { name: 'Sơn Đặng', age: 18 }
+
+// Callback demo:
+function myFunction(param) {
+    if (typeof param === 'function') {
+        param('Hello, i am demo callback function');
+    }
+}
+
+function myCallBack(value) {
+    console.log('Value', value);
+}
+
+myFunction(myCallBack)
+
