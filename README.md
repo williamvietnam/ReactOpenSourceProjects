@@ -39,10 +39,26 @@
   thành LiveScript, và cuối cùng thành JavaScript.
   Giống Java, JavaScript có cú pháp tương tự C, nhưng nó gần với Self hơn Java. .js là phần mở rộng thường được dùng cho
   tập tin mã nguồn JavaScript.)
--  _Source code demo:_ [_Javascript tutorial_](https://github.com/williamvietnam/ReactJS/tree/main/frontend_tutorials/tutorial/javascript_tutorial)
+- _Source code demo:_
+    1. [_Javascript tutorial_](https://github.com/williamvietnam/ReactJS/tree/main/frontend_tutorials/tutorial/javascript_tutorial)
+       |  [_Custom Toast Message_](https://github.com/williamvietnam/ReactJS/tree/main/frontend_tutorials/tutorial/javascript_tutorial/toast_message)
+    2. [_Music player webapp_](https://github.com/williamvietnam/ReactJS/tree/main/frontend_tutorials/tutorial/javascript_tutorial/music_player_webapp)
+       | [_Form Validation_](https://github.com/williamvietnam/ReactJS/tree/main/frontend_tutorials/tutorial/javascript_tutorial/form_validation)
+       | [_TabsUI_](https://github.com/williamvietnam/ReactJS/tree/main/frontend_tutorials/tutorial/javascript_tutorial/tabsUI)
 - Document References:
     1. [Javascript Wikipedia English](https://en.wikipedia.org/wiki/JavaScript)
        |  [Javascript Wikipedia Vietnamese](https://vi.wikipedia.org/wiki/JavaScript)
     2. [Javascript W3Schools](https://www.w3schools.com/js/default.asp)
        | [Javascript freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript)
-    3. JS video tutorials by Vietnamese: [Basic](https://fullstack.edu.vn/courses/javascript-co-ban)  | [Advanced](https://fullstack.edu.vn/courses/javascript-nang-cao)
+    3. JS video tutorials by Vietnamese: [Basic](https://fullstack.edu.vn/courses/javascript-co-ban)
+       | [Advanced](https://fullstack.edu.vn/courses/javascript-nang-cao)
+
+#### Shopping WebApplication
+(Developing...)
+
+## ReactJS tutorials
+(Learning...)
+
+``
+Author: William Giang Nguyen  | Job: Software Developer
+``
