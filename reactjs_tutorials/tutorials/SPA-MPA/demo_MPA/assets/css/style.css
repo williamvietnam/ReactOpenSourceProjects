@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navigation {
+    list-style-type: none;
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+}
+
+#navigation>li {
+    display: inline-block;
+}
+
+#navigation>li>a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#navigation li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#navigation li:hover a {
+    display: block;
+    color: #000;
+    background-color: #ccc;
+}
