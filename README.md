@@ -59,6 +59,19 @@
 ## ReactJS tutorials
 (Learning...)
 
+## My Certificates Collection
+<p align="center">
+     <img alt="F8-Javascript-basic-certificate"
+     src="https://github.com/williamvietnam/ReactJS/blob/main/assets-of-repository/frontend-certificate/F8-JS-basic-certificate.png">
+</p>
+<p align="center">F8 Javascript Certificate 2022</p>
+
+<p align="center">
+     <img alt="FPTSoftware-Frontend-Certificate"
+     src="https://github.com/williamvietnam/ReactJS/blob/main/assets-of-repository/frontend-certificate/FPTSoftware-internship-certificate.jpg">
+</p>
+<p align="center">FPT Software Frontend Certificate 2020</p>
+
 ``
 Author: William Giang Nguyen  | Job: Software Developer
 ``
