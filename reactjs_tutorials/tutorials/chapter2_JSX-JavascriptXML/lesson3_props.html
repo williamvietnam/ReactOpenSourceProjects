@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo react props</title>
+    <!-- react lib: thư viện để viết mã React -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <!-- react-dom lib: thư viện cầu nối giữa react và DOM -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- babel library: thư viện để viết Javascript XML  -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+        Props
+
+        - React elements (là các thẻ, thuộc tính html có sẵn trong ngôn ngữ html)
+          + Sử dụng props giống như vs attribute của thẻ HTML
+          + 2 props class, for => className, htmlFor
+          + Phải tuân theo quy ước có sẵn
+        - React components (là các function/class do dev tự tạo ra)
+          + Sử dụng props giống như đối số cho Component (propsc của Component chính là các tham số đầu vào của function)
+          + Tự do đặt tên props
+              Đặt theo camelCase
+              Có thể bao gồm dấu gạch ngang
+        - Chú ý:
+          + Prop "key" là prop đặc biệt
+          + Props cơ bản là đối số của Component
+            => Props có thể là bất cứ kiểu dữ liệu gì
+          + Sử dụng destructuring
+     -->
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        //PostItem.js
+        // function PostItem() {
+        //     return (
+        //         <div className="post-list">
+        //             <div className="post-item">
+        //                 <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/4405/62f486e5a1971.jpg" alt="Sơn Đặng - Từ chàng sinh viên tới CEO của F8" />
+        //                 <h2 className="post-title">Sơn Đặng - Từ chàng sinh viên tới CEO của F8</h2>
+        //                 <p className="post-desc">Sơn Đặng, sinh năm 1993, hiện tại anh đang là CEO - Founder tại công ty cổ phần
+        //                     công nghệ và giáo dục F8. Anh xuất thân là lập...</p>
+        //                 <p className="post-published">3 tháng trước·4 phút đọc</p>
+        //             </div>
+        //         </div>
+        //     )
+        // }
+
+        // // App.js
+        // function App() {
+        //     return (
+        //         <div id="wrapper">
+        //             <PostItem />
+        //         </div>
+        //     )
+        // }
+
+        // // index.js
+        // ReactDOM.render(<App />, document.getElementById('root'));
+
+        function PostItem(props) {
+            console.log(props.title)
+            return (
+                <div className="post-list">
+                    <div className="post-item">
+                        <img src={props.image} alt={props.title} />
+                        <h2 className="post-title">{props.title}</h2>
+                        <p className="post-desc">{props.description}</p>
+                        <p className="post-published">{props.publishedAt}</p>
+                    </div>
+                </div>
+            )
+        }
+
+        // use destructuring
+        function PostItem2({
+            image,
+            title,
+            description,
+            publishedAt,
+        }) {
+            return (
+                <div className="post-list">
+                    <div className="post-item">
+                        <img
+                            src={image}
+                            alt={title}
+                        />
+                        <h2 className="post-title">{title}</h2>
+                        <p className="post-desc">{description}</p>
+                        <p className="post-published">{publishedAt}</p>
+                    </div>
+                </div>
+            )
+        }
+
+        // App.js
+        function App() {
+            return (
+                <div id="wrapper">
+                    <PostItem2
+                        title="1 Sơn Đặng - Từ chàng sinh viên tới CEO của F8"
+                        image="https://files.fullstack.edu.vn/f8-prod/blog_posts/4405/62f486e5a1971.jpg"
+                        description="Sơn Đặng, sinh năm 1993, hiện tại anh đang là CEO - Founder tại công ty cổ phần công nghệ và giáo dục F8. Anh xuất thân là lập..."
+                        publishedAt="3 tháng trước·4 phút đọc"
+                    />
+                </div>
+            )
+        }
+
+        // index.js
+        // ReactDOM.render(<App />, document.getElementById('root'));
+
+        //------------------------------------- Exercise ----------------------------------------------
+        const courses = [
+            {
+                "id": 5375,
+                "user_id": 179849,
+                "title": "CSS selectors cheatsheet & details",
+                "slug": "css-selectors-cheatsheet-details",
+                "description": null,
+                "meta_title": "CSS selectors cheatsheet & details",
+                "meta_description": null,
+                "image": null,
+                "thumbnail": null,
+                "min_read": 12,
+                "published_at": "2022-11-13 21:29:52",
+                "is_approved": true,
+                "created_at": "2022-11-13T14:29:06.000000Z",
+                "image_url": "",
+                "thumbnail_url": "",
+                "is_bookmark": false,
+                "is_published": true,
+                "user": {
+                    "id": 179849,
+                    "username": "achilleraju",
+                    "first_name": "Đức",
+                    "last_name": "Toàn",
+                    "full_name": "Đức Toàn",
+                    "avatar": "user_avatars/179849/6353e6f02c181.png",
+                    "avatar_url": "https://files.fullstack.edu.vn/f8-prod/user_avatars/179849/6353e6f02c181.png",
+                    "cover_url": "",
+                    "is_comment_blocked": false,
+                    "is_blocked": false
+                },
+                "tags": [
+
+                ]
+            },
+            {
+                "id": 5083,
+                "user_id": 75467,
+                "title": "[Hỏi] Về key prop trong map()",
+                "slug": "thao-luan-ve-key-prop-trong-map",
+                "description": null,
+                "meta_title": "Thảo luận về key prop trong map()",
+                "meta_description": "Chào tất cả anh em, mình đang làm Todo-app react với Firebase. Nhưng khá nhức đầu với...",
+                "image": null,
+                "thumbnail": null,
+                "min_read": 1,
+                "published_at": "2022-10-10 22:50:49",
+                "is_approved": true,
+                "created_at": "2022-10-10T08:21:39.000000Z",
+                "image_url": "",
+                "thumbnail_url": "",
+                "is_bookmark": false,
+                "is_published": true,
+                "user": {
+                    "id": 75467,
+                    "username": "toan-quoc-6",
+                    "first_name": "Vito",
+                    "last_name": "Vincenzo",
+                    "full_name": "Vito Vincenzo",
+                    "avatar": "user_avatars/75467/6308818d76f9d.jpg",
+                    "avatar_url": "https://files.fullstack.edu.vn/f8-prod/user_avatars/75467/6308818d76f9d.jpg",
+                    "cover_url": "",
+                    "is_comment_blocked": false,
+                    "is_blocked": false
+                },
+                "tags": [
+                    {
+                        "id": 2,
+                        "name": "ReactJS",
+                        "slug": "reactjs"
+                    },
+                    {
+                        "id": 315,
+                        "name": "keyprop",
+                        "slug": "keyprop"
+                    },
+                    {
+                        "id": 316,
+                        "name": "Todo-app",
+                        "slug": "todo-app"
+                    }
+                ]
+            },
+            {
+                "id": 5067,
+                "user_id": 40944,
+                "title": "Server-side rendering (SSR) & Client-side rendering (CSR) ?",
+                "slug": "server-side-rendering-ssr-client-side-rendering-csr",
+                "description": null,
+                "meta_title": "Server-side rendering (SSR) & Client-side rendering (CSR) ?",
+                "meta_description": "Server side rendering...",
+                "image": "blog_posts/5068/63427375e4ca8.jpg",
+                "thumbnail": "blog_posts/5068/634273758a67b.jpg",
+                "min_read": 3,
+                "published_at": "2022-10-09 14:08:38",
+                "is_approved": true,
+                "created_at": "2022-10-08T22:58:20.000000Z",
+                "image_url": "https://files.fullstack.edu.vn/f8-prod/blog_posts/5068/63427375e4ca8.jpg",
+                "thumbnail_url": "https://files.fullstack.edu.vn/f8-prod/blog_posts/5068/634273758a67b.jpg",
+                "is_bookmark": false,
+                "is_published": true,
+                "user": {
+                    "id": 40944,
+                    "username": "quang-tran-anh",
+                    "first_name": "Quang Trần",
+                    "last_name": "Anh",
+                    "full_name": "Quang Trần Anh",
+                    "avatar": "https://avatar-redirect.appspot.com/google/111127707619781587452?size=400",
+                    "avatar_url": "https://avatar-redirect.appspot.com/google/111127707619781587452?size=400",
+                    "cover_url": "",
+                    "is_comment_blocked": false,
+                    "is_blocked": false
+                },
+                "tags": [
+
+                ]
+            }
+        ]
+
+        function CourseItem({
+            image,
+            title,
+            description,
+            publishedAt,
+        }) {
+            return (
+                <div className="post-list">
+                    <h2 className="post-title">{title}</h2>
+                    <div className="post-item">
+                        <img
+                            src={image}
+                            alt={title}
+                        />
+                        <p className="post-desc">{description}</p>
+                        <p className="post-published">{publishedAt}</p>
+                    </div>
+                </div>
+            )
+        }
+
+        function App2() {
+            return (
+                courses.map(item => (
+                    <div id="wrapper">
+                        <CourseItem
+                            key={item.id}
+                            title={item.title}
+                            image={item.user.avatar_url}
+                            description={item.slug}
+                            publishedAt={item.created_at}
+                        />
+                    </div>
+                ))
+            )
+        }
+
+        console.log(App2)
+
+        ReactDOM.render(<App2 />, document.getElementById('root'));
+    </script>
+</body>
+
+</html>
