@@ -15,13 +15,13 @@
 </head>
 
 <body>
+    <div>--------------------------JSX Demo 1---------------------------</div>
     <div id="root"></div>
+    <div>--------------------------JSX Demo 2---------------------------</div>
     <div id="demo2"></div>
 
     <!-- demo JSX - JavascriptXML -->
     <script type="text/babel"> //cần khai báo type là babel để trình thông dịch hiểu khối mã bên trong được viết dưới dạng JSX
-        const reactCourse = 'React';
-
         const ul = <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -54,7 +54,11 @@
 
         const jsx = (
             <ul>
-                {courses.map(course => <li>{course.name}</li>)}
+                {
+                    courses.map(item =>
+                        <li>{item.name}</li>
+                    )
+                }
             </ul>
         )
 
