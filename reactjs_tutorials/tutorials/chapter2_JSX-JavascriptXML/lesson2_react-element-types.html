@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Element Types</title>
+    <!-- react lib: thư viện để viết mã React -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <!-- react-dom lib: thư viện cầu nối giữa react và DOM -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- babel library: thư viện để viết Javascript XML  -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+
+        // Demo: Tách component sử dụng function
+        function Header() {
+            return (
+                <div className="header">Header</div>
+            )
+        }
+
+
+        // Demo: Tách component sử dụng class
+        class Content extends React.Component {
+            render() {
+                return (
+                    <div className="content">Content</div>
+                )
+            }
+        }
+
+        class Footer extends React.Component {
+            render() {
+                return (
+                    <div className="footer">Footer</div>
+                )
+            }
+        }
+
+
+        const app = (
+            <div className="wrapper">
+                <Header />
+                <Content />
+                <Footer />
+            </div>
+        );
+
+        ReactDOM.render(app, document.getElementById('app'));
+        console.log(app)
+    </script>
+</body>
+
+</html>
