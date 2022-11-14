@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+
+<body>
+    <script>
+        // (Exercise_1) Tạo: <h1 title = "Hello" class = "heading">Hello DOM/React</h1>
+
+        //DOM
+        const h1DOM = document.createElement('h1');
+
+        h1DOM.title = 'Hello';
+        h1DOM.className = 'heading';
+
+        h1DOM.innerText = 'Hello DOM!';
+
+        document.body.appendChild(h1DOM);
+
+        //React | React.createElement(type, props, children, n); | props: properties, các thuộc tính của thẻ muốn truyền vào thì gom vào một đối tượng rồi truyền
+        // tham số n trong createElement chính là các children1, children2, children3,... --> Qsat demo React ở bt2 bên dưới
+        const h1React = React.createElement('h1', {
+            title: 'Hello',
+            className: 'heading'
+        }, 'Hello React');
+        // Chú ý: Tuy tham số children được tách ra riêng so với tham số props{title, classname,...} (vs mục đích cho dev dễ hình dung)
+        // nhưng thực tế tham số này vẫn là một prop khi được React render ra element h1
+        console.dir(h1DOM); // dir cũng gần tương tự log
+        console.log(h1React);
+
+        //-------------------------------------------------------------------------------------------------
+
+        // (Exercise_2) Tạo:
+        //   <ul>
+        //      <li>Javascript</li>
+        //      <li>React</li>
+        //  </ul>
+
+        // DOM
+        const ulDOM = document.createElement('ul');
+
+        const li1DOM = document.createElement('li');
+        li1DOM.innerText = 'Javascript';
+
+        const li2DOM = document.createElement('li');
+        li2DOM.innerText = 'React';
+
+        ulDOM.appendChild(li1DOM);
+        ulDOM.appendChild(li2DOM);
+
+        document.body.appendChild(ulDOM);
+
+        console.dir(ulDOM);
+
+        // React
+        const ulReact = React.createElement(
+            'ul',
+            null,
+            React.createElement('li', null, 'HTML'),
+            React.createElement('li', null, 'CSS'),
+            React.createElement('li', null, 'Javscript'),
+            React.createElement('li', null, 'ReactJS'),
+        )
+        const container = document.querySelector('body');
+
+        // React-DOM --> render UI
+        ReactDOM.render(ulReact, container);
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    React-DOM: hiểu đơn giản nó là cầu nối giữa React và DOM
+    (tương tự React-Native: là cầu nối giữa React và Native | 
+    Native ở đây là Android Native sử dụng Java/Kotlin hoặc iOS Native sử dụng ObjectiveC/Swift)
+ -->
