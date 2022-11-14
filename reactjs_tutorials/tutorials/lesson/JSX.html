@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX - Javascript XML</title>
+    <!-- react lib: thư viện để viết mã React -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <!-- react-dom lib: thư viện cầu nối giữa react và DOM -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- babel library: thư viện để viết Javascript XML  -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <div id="demo2"></div>
+
+    <!-- demo JSX - JavascriptXML -->
+    <script type="text/babel"> //cần khai báo type là babel để trình thông dịch hiểu khối mã bên trong được viết dưới dạng JSX
+        const reactCourse = 'React';
+
+        const ul = <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+        </ul>
+
+        ReactDOM.render(ul, document.getElementById('root'))
+
+        //-----------------------------------------------------------------------------------
+
+        // (Demo 2)
+        const courses = [
+            {
+                name: 'HTML, CSS'
+            },
+            {
+                name: 'Responsive web design'
+            },
+            {
+                name: 'ReactJS'
+            }
+        ]
+
+        // const jsx = <ul>
+        //     <li>{courses[0].name}</li>
+        //     <li>{courses[1].name}</li>
+        //     <li>{courses[2].name}</li>
+        // </ul>
+
+        const jsx = (
+            <ul>
+                {courses.map(course => <li>{course.name}</li>)}
+            </ul>
+        )
+
+        ReactDOM.render(jsx, document.getElementById('demo2'))
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    1. What is JSX? | JSX là Javascript XML 
+
+ -->
