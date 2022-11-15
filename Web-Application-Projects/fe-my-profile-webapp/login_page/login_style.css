@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#root{
+    display: block;
+    text-align: center;
+}
+
+#container{
+    position: absolute;
+    display: block;
+}
+
+#thumbnail-login{
+    width: 25%;
+    height: 25%;
+}
+
+.form-group{
+    margin-top: 8px;
+}
+
+.form-submit{
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
+}
+
+.form-submit>a{
+    text-decoration: none;
+}
+
+.register-account{
+    margin-top: 8px;
+}
