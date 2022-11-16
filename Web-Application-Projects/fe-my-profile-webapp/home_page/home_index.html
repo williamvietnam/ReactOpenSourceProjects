@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="../assets/css_common/header_style.css">
     <link rel="stylesheet" href="./home_style.css">
 </head>
+
 <body>
     <div id="container">
         <div id="header">
-            
+            <ul>
+                <li id="home-tab">Homepage</li>
+                <li id="career-tab">Career</li>
+                <li id="education-tab">Education</li>
+                <li id="travel-tab">Travelling</li>
+                <li id="more-tab">More</li>
+            </ul>
+
+            <button id="logout-btn">Log out</button>
         </div>
-    
-        <div id="content"></div>
+
+        <div id="content">
+            <div id="career-wrapper">
+                <div id="career-wrapper-left">
+                    <h1>CAREER</h1>
+                    <h3>Some career highlights</h3>
+                    <ul>
+                        <li id="career-2022-btn">2022</li>
+                        <li id="career-2021-btn">2021</li>
+                        <li id="career-2019-btn">2019</li>
+                        <li id="career-2018-btn">2018</li>
+                    </ul>
+                </div>
+                <div id="career-wrapper-right">
+                    <img id="career-image" src="../assets/image/home/career-default-image.png" alt="career">
+                    <h4 id="career-heading">Career highligt 2022</h4>
+                </div>
+            </div>
+
+            <div id="education-wrapper">
+                <div id="education-wrapper-right">
+                    <img id="education-image" src="../assets/image/home/education-default-image.jpg" alt="education">
+                    <h4 id="education-heading">Education highlight 2022</h4>
+                </div>
+
+                <div id="education-wrapper-left">
+                    <h1>EDUCATION</h1>
+                    <h3>Some education highlights</h3>
+                    <ul>
+                        <li id="education-2023-btn">2023</li>
+                        <li id="education-2022-btn">2022</li>
+                        <li id="education-2017-btn">2017</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="travel-wrapper">
+                <div id="travel-wrapper-left">
+                    <h1>TRAVELLING</h1>
+                    <h3>Memorable trips</h3>
+                    <ul>
+                        <li id="travel-2022-btn">2022</li>
+                        <li id="travel-2021-btn">2021</li>
+                        <li id="travel-2019-btn">2019</li>
+                        <li id="travel-2018-btn">2018</li>
+                    </ul>
+                </div>
+
+                <div id="travel-wrapper-right">
+                    <img id="travel-image" src="../assets/image/home/travelling-default-image.jpg" alt="travel">
+                    <h4 id="travel-heading">Travelling highlight 2022</h4>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="../assets/logic_common/header.js"></script>
     <script src="./home_app.js"></script>
 </body>
+
 </html>

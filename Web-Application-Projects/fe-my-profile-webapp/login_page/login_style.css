@@ -1,28 +1,43 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-#root{
-    display: block;
+#container {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top:24px;
     text-align: center;
 }
 
-#container{
-    position: absolute;
-    display: block;
+#thumbnail-login {
+    width: 50%;
+    height: 50%;
 }
 
-#thumbnail-login{
-    width: 25%;
-    height: 25%;
-}
-
-.form-group{
+.form-group {
     margin-top: 8px;
 }
 
-.form-submit{
+.form-group .form-label {
+    display: block;
+    margin-left: 37%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.form-group .form-control{
+    width: 25%;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.form-submit {
+    width: 20%;
     font-size: 16px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -31,10 +46,10 @@
     margin-top: 16px;
 }
 
-.form-submit>a{
+.form-submit>a {
     text-decoration: none;
 }
 
-.register-account{
+.register-account {
     margin-top: 8px;
 }
