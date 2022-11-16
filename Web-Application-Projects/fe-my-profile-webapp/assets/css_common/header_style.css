@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    background-color: black;
+}
+
+#header>ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+#header>ul>li {
+    padding: 0 24px;
+    text-decoration: none;
+    line-height: 46px;
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+}
+
+#header li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#header #logout-btn {
+    margin-top: 12px;
+    position: absolute;
+    right: 0;
+    padding: 0 16px;
+    top: 0;
+    cursor: pointer;
+}
