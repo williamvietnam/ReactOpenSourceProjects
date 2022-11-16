@@ -57,28 +57,29 @@
 (Developing...)
 
 ## ReactJS tutorials
-1. React, React-DOM
-2. JSX, Components, Props
+1. React, React-DOM [See detail]()
+2. JSX, Components, Props [See detail]()
    - What is JSX?
    - React element types
    - What are props? When to use props?
    - DOM events?
    - Children props? Render props?
-3. Create React App
+3. Create React App [See detail]()
    - What is NodeJS?
    - React + Webpack
-4. Hooks
+4. Hooks [See detail]()
    - What is Hooks?
    - useState hook
    - useEffect hook: useEffect(callback)  |  useEffect(callback, [])  |  useEffect(callback, [dependencies])
    - useLayoutEffect hook
    - useRef hook
    - useCallback hook
-5. CSS, SCSS, CSS modules
+5. CSS, SCSS, CSS modules [See detail]()
 
 ## Web Application Projects
-(Developing...)
-
+1. TopTop React WebApp (TikTok clone UI) [See detail]()
+2. Social Network React WebApp (Facebook clone UI) [See detail]()
+3. MyProfile Frontend Webapp [See detail]()
 <br></br>
 
 ## My Certificates Collection
