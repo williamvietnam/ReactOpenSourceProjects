@@ -197,6 +197,7 @@
 #footer>ul>li:hover {
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 #footer>p {
