@@ -1,0 +1,206 @@
+#content {
+    padding-top: 46px;
+}
+
+/* Career */
+#career-wrapper>#career-wrapper-left,
+#career-wrapper>#career-wrapper-right {
+    width: 45vw;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+#career-wrapper-left>h1,
+#career-wrapper-left>h3 {
+    display: block;
+}
+
+#career-wrapper-left>ul {
+    display: block;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#career-wrapper-left>ul>li {
+    padding: 8px 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#career-2022-btn {
+    color: black;
+    background-color: navajowhite;
+}
+
+#career-2021-btn {
+    color: white;
+    background-color: black;
+}
+
+#career-2019-btn {
+    color: white;
+    background-color: #04AA6D;
+}
+
+#career-2018-btn {
+    color: black;
+    background-color: lightpink;
+}
+
+#career-wrapper>#career-wrapper-right>#career-image {
+    width: 100%;
+    display: block;
+}
+
+/* Education */
+#education-wrapper>#education-wrapper-left,
+#education-wrapper>#education-wrapper-right {
+    margin-top: 56px;
+    width: 45vw;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+#education-wrapper-left>h1,
+#education-wrapper-left>h3 {
+    display: block;
+}
+
+#education-wrapper-left>ul {
+    display: block;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#education-wrapper-left>ul>li {
+    padding: 8px 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#education-2023-btn {
+    color: black;
+    background-color: navajowhite;
+}
+
+#education-2022-btn {
+    color: white;
+    background-color: black;
+}
+
+#education-2017-btn {
+    color: white;
+    background-color: #04AA6D;
+}
+
+#education-wrapper>#education-wrapper-right>#education-image {
+    width: 100%;
+    display: block;
+}
+
+#education-wrapper>#education-wrapper-right>#education-heading {
+    margin-top: 8px;
+}
+
+/* Travelling */
+#travel-wrapper>#travel-wrapper-left,
+#travel-wrapper>#travel-wrapper-right {
+    margin-top: 56px;
+    width: 45vw;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+#travel-wrapper-left>h1,
+#travel-wrapper-left>h3 {
+    display: block;
+}
+
+#travel-wrapper-left>ul {
+    display: block;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#travel-wrapper-left>ul>li {
+    padding: 8px 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#travel-2022-btn {
+    color: black;
+    background-color: navajowhite;
+}
+
+#travel-2021-btn {
+    color: white;
+    background-color: indigo;
+}
+
+#travel-2019-btn {
+    color: white;
+    background-color: red;
+}
+
+#travel-2018-btn {
+    color: black;
+    background-color: cornflowerblue;
+}
+
+#travel-wrapper>#travel-wrapper-right>#travel-image {
+    width: 100%;
+    display: block;
+}
+
+#travel-wrapper>#travel-wrapper-right>#travel-heading {
+    margin-top: 8px;
+}
+
+#footer {
+    background-color: dimgray;
+    margin-top: 64px;
+    text-align: center;
+    padding-top: 64px;
+    width: 100%;
+    height: 30vh;
+    display: block;
+}
+
+#footer>ul>li {
+    padding: 0 24px;
+    color: blanchedalmond;
+    display: inline-block;
+}
+
+#footer>ul>li:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#footer>p {
+    color: blanchedalmond;
+    margin-top: 56px;
+}
