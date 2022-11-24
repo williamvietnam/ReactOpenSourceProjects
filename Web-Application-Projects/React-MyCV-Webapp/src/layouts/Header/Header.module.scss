@@ -1,0 +1,100 @@
+.container {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 24px;
+    width: 60%;
+    height: 21vh;
+    display: flex;
+    box-shadow: 1px 1px 10px;
+    justify-content: space-between;
+    background-color: #ccdde4;
+}
+
+.wrapper-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper-center {
+    padding-right: 88px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-account-nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.icon-btn {
+    width: 18px;
+    height: 18px;
+    border-radius: 30%;
+
+    &:hover {
+        background-color: red;
+    }
+}
+
+.divider-vertical {
+    width: 1px;
+    height: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+.wrapper-right {
+    margin-left: 40px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-info {
+    display: flex;
+    flex: 1;
+}
+
+.top-info-inside {
+    margin-left: 52px;
+    margin-top: 30px;
+    flex: 1;
+}
+
+.bottom-info {
+    display: flex;
+    flex: 1;
+}
+
+.bottom-info-inside {
+    margin-left: 52px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.title-info {
+    margin-bottom: 4px;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    color: #949292;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content-info {
+    font-size: 16px;
+}
