@@ -1,0 +1,1 @@
+export * as ImagesRes from "./ImagesRes";
