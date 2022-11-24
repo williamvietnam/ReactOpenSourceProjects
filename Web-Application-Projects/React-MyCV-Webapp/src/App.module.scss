@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(to right top,#58aec3,#ccdde4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
