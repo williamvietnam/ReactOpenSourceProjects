@@ -17,18 +17,18 @@
     height: 15rem;
 }
 
-.slide-show-dot{
+.slide-show-dot {
     display: flex;
     justify-content: center;
 }
 
-.icon-active{
+.dot-active {
     width: 12px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.icon{
+.dot-inactive {
     width: 8px;
     margin-left: 5px;
     margin-right: 5px;
