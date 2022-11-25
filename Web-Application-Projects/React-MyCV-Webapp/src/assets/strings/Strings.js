@@ -1,1 +1,3 @@
 export const WEB_APP_NAME = "myCV";
+export const TITLE_INTRODUCE = "1. Introduce";
+export const CONTENT_INTRODUCE = "Hanne Keiling is a senior digital communications expert with over eight years of experience ideating, executing and launching user-first experiences to achieve business goals. She is a former Indeed editorial team member who helped job seekers be successful on Indeed throughout their job search and into their careers.";
