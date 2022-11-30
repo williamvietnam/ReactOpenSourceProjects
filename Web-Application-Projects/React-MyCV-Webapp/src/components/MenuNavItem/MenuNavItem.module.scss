@@ -1,11 +1,19 @@
 .menu-nav-item {
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 16px;
 
-    &.active{
-        background-color: wheat;
+    &.active {
+        background-color: #6A5ACD;
+
+        .title {
+            color: white;
+        }
     }
 
     &:hover {
@@ -13,14 +21,16 @@
     }
 }
 
-.icon{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    width: 56px;
-    height: 56px;
+.icon {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    width: 48px;
+    height: 48px;
 }
 
-.title{
-    font-size: 20px;
-    text-decoration: none;
+.title {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 8px;
 }

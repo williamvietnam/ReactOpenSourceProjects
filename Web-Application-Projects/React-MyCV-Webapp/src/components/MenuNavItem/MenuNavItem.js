@@ -9,7 +9,7 @@ function MenuNavItem({ title, to, icon }) {
   return (
     <NavLink className={(nav) => cx('menu-nav-item', { active: nav.isActive })} to={to}>
       <img className={cx("icon")} src={icon} alt={title} />
-      <span className={cx("title")}>{title}</span>
+      <p className={cx("title")}>{title}</p>
     </NavLink>
   );
 }
