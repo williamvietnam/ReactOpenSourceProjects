@@ -1,0 +1,1 @@
+Write component guideline and explain props of component in here
