@@ -13,7 +13,7 @@ const btnEducation2017 = document.getElementById('education-2017-btn');
 const imgEducation = document.getElementById('education-image');
 const headingEducation = document.getElementById('education-heading');
 
-//travelling
+//traveling
 const btnTravelling2022 = document.getElementById('travel-2022-btn');
 const btnTravelling2021 = document.getElementById('travel-2021-btn');
 const btnTravelling2019 = document.getElementById('travel-2019-btn');
